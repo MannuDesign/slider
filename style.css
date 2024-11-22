@@ -1,0 +1,51 @@
+*{margin:0;padding:0;box-sizing:border-box;}
+budy{scroll-behavior: smooth;}
+.container{width:100%;height:auto;}
+.mySlides {display:none; position:relative;width:100%;height:auto;}
+.slidebox {width:100%;height:auto;object-fit: contain;  }
+.slidebox img{width:100%;height:auto;object-fit: contain;position:absolute;}
+.text-box {position:absolute;width:50%;height:300px; background:transparent;margin:5% 0% 0% 10%; font-size:50PX; color:#467956;}
+
+.button1{background:black;color:wheat;width:50px;height:30px; float:left;position:absolute; margin:18% 5% 0% 5%;}
+
+.button2{background:black;color:wheat;width:50px;height:30px;float:right;margin-top:-10px;position:absolute;margin:18% 5% 0% 90%;}
+
+
+
+
+
+
+ @keyframes slide-in {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+
+
+ .text-box p {
+    animation: slide-in 1000ms;
+     animation-timing-function: linear;
+  }
+
+
+@-webkit-keyframes slideInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-2000px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }  
+
+}
+.text-box h5 {
+ animation: slideInDown 1000ms;  
+ 
+}
